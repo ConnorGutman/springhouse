@@ -1,0 +1,47 @@
+body {
+  font-family: Brown, sans-serif;
+  color: #231F20;
+}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p {
+  font-size: 12px;
+}
+hr {
+  border: 1px solid #231F20;
+}
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.quote {
+  font-family: DalaFloda, serif !important;
+  font-size: 36px;
+}
+.navbar-brand {
+  font-family: DalaFloda, serif !important;
+  font-size: 36px;
+}
+.nav {
+  li {
+    a {
+      font-size: 12px;
+      color: #231F20 !important;
+      font-weight: 600;
+    }
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+    font-size: 12px;
+    span {
+      border-bottom: 2px solid #231F20;
+    }
+  }
+}

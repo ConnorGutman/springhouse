@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Brown';
+  src:  url('Fonts/Brown-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'DalaFloda';
+  src:  url('Fonts/DalaFloda-RomanNo2.otf') format('opentype');
+}
+
+@import '_type';
+@import '_nav';
+@import '_grid';
+@import '_media';
+@import '_sections';
+
+body {
+  background-color: #efefef;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  margin: 0;
+}
+.gutters {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.remove-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+.match-nav {
+  padding-left: 5%;
+  padding-right: 5%;
+}

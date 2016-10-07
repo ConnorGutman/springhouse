@@ -1,0 +1,11 @@
+nav {
+  #topNav {
+    border-bottom: 2px solid #231F20;
+    margin: 0 5%;
+    .nav {
+      @media(min-width: 768px) {
+        float: right;
+      }
+    }
+  }
+}
