@@ -9,8 +9,28 @@
 .case {
   width: 100%;
   height: 30vh;
+  margin: 2vh 0;
   background-repeat: no-repeat;
   background-size: cover;
+  p {
+    position: absolute;
+    margin: 2vh auto;
+    line-height: 30vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+  }
+  &:before {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 30vh;
+
+    background-color: rgba(000, 000, 000, .5);
+  }
 }
 .C1, .C5 {
   background-image: url('../img/Irving_Place.JPG');
@@ -20,4 +40,17 @@
 }
 .C3, .C4 {
   background-image: url('../img/Miami_Beach.JPG');
+}
+
+.press-logo {
+  width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+}
+.roundmap {
+  width: 100%;
+  margin: 2vh 0;
 }

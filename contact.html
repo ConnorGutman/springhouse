@@ -24,25 +24,43 @@
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="casestudies.html">Case Studies</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="casestudies.html">Case Studies</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="casestudies.html">Case Studies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="irvingplace.html">Irving Place</a>
+            <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
+            <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
+            <a class="dropdown-item" href="bedstuy.html">Bed-Stuy</a>
+            <a class="dropdown-item" href="columbiauniversity.html">Columbia University</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="press.html">Press</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="contact">
     <div class="row">
       <div class="col-sm-3">
-        <h1 class="text-xs-center">address / contact</h1>
+        <p>Springhouse Partners</p>
+        <p>320 Fifth Avenue
+          <br>Suite 800
+          <br>New York, NY 10001</p>
+        <a href="tel:+12125966960">
+          <p>T: 212 596 6960</p>
+        </a>
+        <a href="mailto:info@springhousepartners.com">
+          <p>info@springhousepartners.com</p>
+        </a>
       </div>
       <div class="col-sm-9">
-        <h1 class="text-xs-center">Map</h1>
+        <div id="map"></div>
       </div>
     </div>
   </div>
@@ -50,11 +68,12 @@
   <footer>
     <div class="container-fluid">
       <div class="row">
+        <hr class="footer-hr">
         <div class="col-xs-8">
           <p class="text-xs-left">Springhouse Partners, LLC</p>
         </div>
         <div class="col-xs-4">
-          <p class="text-xs-right">Address</p>
+          <p class="text-xs-right">320 Fifth Avenue, Suite 800 New York, NY 10001</p>
         </div>
       </div>
     </div>
@@ -64,6 +83,158 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa19u4SxY-qBj_MnsRUTYdsoTlGv6L47E"></script>
+
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(40.7472385, -73.9877219), // New York
+
+        // How you would like to style the map.
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#e9e9e9"
+          }, {
+            "lightness": 17
+          }]
+        }, {
+          "featureType": "landscape",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#f5f5f5"
+          }, {
+            "lightness": 20
+          }]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "geometry.fill",
+          "stylers": [{
+            "color": "#ffffff"
+          }, {
+            "lightness": 17
+          }]
+        }, {
+          "featureType": "road.highway",
+          "elementType": "geometry.stroke",
+          "stylers": [{
+            "color": "#ffffff"
+          }, {
+            "lightness": 29
+          }, {
+            "weight": 0.2
+          }]
+        }, {
+          "featureType": "road.arterial",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#ffffff"
+          }, {
+            "lightness": 18
+          }]
+        }, {
+          "featureType": "road.local",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#ffffff"
+          }, {
+            "lightness": 16
+          }]
+        }, {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#f5f5f5"
+          }, {
+            "lightness": 21
+          }]
+        }, {
+          "featureType": "poi.park",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#dedede"
+          }, {
+            "lightness": 21
+          }]
+        }, {
+          "elementType": "labels.text.stroke",
+          "stylers": [{
+            "visibility": "on"
+          }, {
+            "color": "#ffffff"
+          }, {
+            "lightness": 16
+          }]
+        }, {
+          "elementType": "labels.text.fill",
+          "stylers": [{
+            "saturation": 36
+          }, {
+            "color": "#333333"
+          }, {
+            "lightness": 40
+          }]
+        }, {
+          "elementType": "labels.icon",
+          "stylers": [{
+            "visibility": "off"
+          }]
+        }, {
+          "featureType": "transit",
+          "elementType": "geometry",
+          "stylers": [{
+            "color": "#f2f2f2"
+          }, {
+            "lightness": 19
+          }]
+        }, {
+          "featureType": "administrative",
+          "elementType": "geometry.fill",
+          "stylers": [{
+            "color": "#fefefe"
+          }, {
+            "lightness": 20
+          }]
+        }, {
+          "featureType": "administrative",
+          "elementType": "geometry.stroke",
+          "stylers": [{
+            "color": "#fefefe"
+          }, {
+            "lightness": 17
+          }, {
+            "weight": 1.2
+          }]
+        }]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(40.7472385, -73.9877219),
+        map: map,
+        title: 'Snazzy!'
+      });
+    }
+  </script>
+
 </body>
 
 </html>

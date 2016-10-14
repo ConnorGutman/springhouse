@@ -5,4 +5,39 @@
       padding: 0;
     }
   }
+  .home-text {
+    padding: 0 5%;
+  }
+}
+#about {
+  padding: 5vh 5% 0;
+}
+#cases {
+  padding: 0 5%;
+}
+#press {
+  padding: 0 5%;
+}
+#contact {
+  padding: 5vh 5%;
+  .col-sm-3 {
+    padding-top: 5vh;
+    p {
+      font-weight: 600;
+    }
+  }
+}
+#caseStudy {
+  padding: 5vh 5%;
+  img {
+    width: 100%;
+  }
+}
+footer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.xl-footer {
+  padding-left: 0;
+  padding-right: 0;
 }

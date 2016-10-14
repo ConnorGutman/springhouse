@@ -21,10 +21,19 @@
       <a class="navbar-brand" href="/">Springhouse</a>
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link active" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="casestudies.html">Case Studies</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="casestudies.html">Case Studies</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="casestudies.html">Case Studies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="irvingplace.html">Irving Place</a>
+            <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
+            <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
+            <a class="dropdown-item" href="bedstuy.html">Bed-Stuy</a>
+            <a class="dropdown-item" href="columbiauniversity.html">Columbia University</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="press.html">Press</a>
@@ -36,12 +45,12 @@
     </div>
   </nav>
 
-  <div class="container-fluid match-nav">
+  <div class="container-fluid" id="about">
     <div class="row">
       <div class="col-sm-6">
         <div class="row">
           <p class="subtitle">Our Story</p>
-          <hr>
+          <hr class="subtitle-hr">
           <div class="col-sm-6">
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
               quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
@@ -58,7 +67,7 @@
         </div>
         <div class="row">
           <p class="subtitle">Adam Verner</p>
-          <hr>
+          <hr class="subtitle-hr">
           <div class="col-sm-6">
             <img class="media-fw" src="img/portrait.png">
           </div>
@@ -69,7 +78,7 @@
         </div>
         <div class="row">
           <p class="subtitle">Development</p>
-          <hr>
+          <hr class="subtitle-hr">
           <div class="col-xs-6 remove-gutters">
             <ul class="remove-gutters">
               <li><span>Irving Place</span>
@@ -106,11 +115,12 @@
   <footer>
     <div class="container-fluid">
       <div class="row">
+        <hr class="footer-hr">
         <div class="col-xs-8">
           <p class="text-xs-left">Springhouse Partners, LLC</p>
         </div>
         <div class="col-xs-4">
-          <p class="text-xs-right">Address</p>
+          <p class="text-xs-right">320 Fifth Avenue, Suite 800 New York, NY 10001</p>
         </div>
       </div>
     </div>

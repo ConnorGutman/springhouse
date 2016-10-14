@@ -4,7 +4,22 @@ nav {
     margin: 0 5%;
     .nav {
       @media(min-width: 768px) {
-        float: right;
+        position: absolute;
+        right: 7%;
+        bottom: 10%;
+      }
+      .nav-item {
+        .active {
+          border-bottom: 4px solid #231F20;
+        }
+      }
+      .dropdown-menu {
+        border-radius: 0;
+        background-color: #efefef;
+      }
+      .dropdown-divider {
+        height: 2px;
+        background-color: #231F20;
       }
     }
   }
