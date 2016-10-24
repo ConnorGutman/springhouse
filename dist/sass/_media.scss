@@ -38,7 +38,7 @@
   &:hover {
     &:before {
       background-color: rgba(000, 000, 000, .5);
-      background-image: url('../../img/leftarrow.svg');
+      background-image: url('../img/leftarrow.svg');
       background-repeat: no-repeat;
       background-position: 2% 95%;
       opacity: 1;
@@ -50,7 +50,7 @@
       content: "";
       width: 96%;
       height: 90%;
-      background-image: url('../../img/rightarrow.svg');
+      background-image: url('../img/rightarrow.svg');
       background-repeat: no-repeat;
       background-position: top right;
       opacity: 1;
@@ -98,7 +98,7 @@
       content: "";
       width: 96%;
       height: 90%;
-      background-image: url('../../img/leftarrow.svg');
+      background-image: url('../img/leftarrow.svg');
       background-repeat: no-repeat;
       background-position: bottom left;
       opacity: 1;
@@ -110,7 +110,7 @@
       content: "";
       width: 96%;
       height: 90%;
-      background-image: url('../../img/rightarrow.svg');
+      background-image: url('../img/rightarrow.svg');
       background-repeat: no-repeat;
       background-position: top right;
       opacity: 1;
@@ -134,7 +134,7 @@
       content: "";
       width: 90%;
       height: 90%;
-      background-image: url('../../img/leftarrow.svg');
+      background-image: url('../img/leftarrow.svg');
       background-repeat: no-repeat;
       background-position: bottom left;
     }
@@ -145,7 +145,7 @@
       content: "";
       width: 90%;
       height: 90%;
-      background-image: url('../../img/rightarrow.svg');
+      background-image: url('../img/rightarrow.svg');
       background-repeat: no-repeat;
       background-position: top right;
     }
