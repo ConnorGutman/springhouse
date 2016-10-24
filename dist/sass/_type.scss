@@ -70,7 +70,10 @@ ul {
   p {
     font-family: DalaFloda, serif;
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: 2px 2px 8px #000000;
+    @media(min-width: 768px) {
+      font-size: 3rem;
+    }
   }
 }

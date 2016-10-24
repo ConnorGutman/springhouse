@@ -24,28 +24,53 @@
     text-align: center;
   }
   &:before {
-    content:"";
+    content: "";
     display: block;
     width: 100%;
     height: 30vh;
-
-    background-color: rgba(000, 000, 000, .5);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  &:after {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  &:hover {
+    &:before {
+      background-color: rgba(000, 000, 000, .5);
+      background-image: url('../../img/leftarrow.svg');
+      background-repeat: no-repeat;
+      background-position: 2% 95%;
+      opacity: 1;
+    }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 96%;
+      height: 90%;
+      background-image: url('../../img/rightarrow.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+      opacity: 1;
+    }
   }
 }
-.C1, .C5 {
-  background-image: url('../img/Irving_Place.JPG');
+.C1,
+.C5 {
+  background-image: url('../img/Irving_Place-dark.JPG');
 }
 .C2 {
-  background-image: url('../img/Columbia_University.JPG');
+  background-image: url('../img/Columbia_University-dark.JPG');
 }
-.C3, .C4 {
-  background-image: url('../img/Miami_Beach.JPG');
+.C3,
+.C4 {
+  background-image: url('../img/Miami_Beach-dark.JPG');
 }
-
 .press-logo {
   width: 100%;
 }
-
 #map {
   width: 100%;
   height: 70vh;
@@ -53,4 +78,102 @@
 .roundmap {
   width: 100%;
   margin: 2vh 0;
+}
+.arrows-img {
+  &:before {
+    opacity: 0;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+  }
+  &:after {
+    opacity: 0;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+  }
+  &:hover {
+    &:before {
+      position: absolute;
+      bottom: 5%;
+      left: 2%;
+      content: "";
+      width: 96%;
+      height: 90%;
+      background-image: url('../../img/leftarrow.svg');
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      opacity: 1;
+    }
+    &:after {
+      position: absolute;
+      bottom: 5%;
+      left: 2%;
+      content: "";
+      width: 96%;
+      height: 90%;
+      background-image: url('../../img/rightarrow.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+      opacity: 1;
+    }
+  }
+}
+.arrows-img-6 {
+  &:before {
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+  }
+  &:after {
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+  }
+  &:hover {
+    &:before {
+      position: absolute;
+      bottom: 2%;
+      left: 5%;
+      content: "";
+      width: 90%;
+      height: 90%;
+      background-image: url('../../img/leftarrow.svg');
+      background-repeat: no-repeat;
+      background-position: bottom left;
+    }
+    &:after {
+      position: absolute;
+      bottom: 8%;
+      left: 5%;
+      content: "";
+      width: 90%;
+      height: 90%;
+      background-image: url('../../img/rightarrow.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+  }
+}
+/** LIGHTBOX MARKUP **/
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+  /** Unhide lightbox **/
+  display: block;
 }
