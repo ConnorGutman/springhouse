@@ -1,6 +1,6 @@
 nav {
   #topNav {
-    border-bottom: 2px solid #231F20;
+    border-bottom: 1px solid #231F20;
     margin: 0 5%;
     .navbar-brand {
       @media(max-width: 768px) {
@@ -10,7 +10,7 @@ nav {
     .nav {
       @media(min-width: 768px) {
         position: absolute;
-        right: 7%;
+        right: 6.25%;
         bottom: 10%;
       }
       .nav-item {
@@ -21,6 +21,9 @@ nav {
       .dropdown-menu {
         border-radius: 0;
         background-color: #efefef;
+        a {
+          font-weight: 600;
+        }
       }
       .dropdown-divider {
         height: 2px;
