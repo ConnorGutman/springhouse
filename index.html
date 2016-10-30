@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="dropdown" href="selectprojects.html">Select Projects</a>
-          <div class="dropdown-menu">
+        <li class="nav-item" id="selectProjects">
+          <a class="nav-link" href="selectprojects.html">Select Projects</a>
+          <div class="dropdown-menu" id="selectProjectsList">
             <a class="dropdown-item" href="irvingplace.html">Irving Place</a>
             <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
             <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
@@ -55,14 +55,14 @@
     </div>
     <div class="row home-text">
       <div class="col-sm-6">
-        <p class="text-xs-left text-uppercase">Overview</p>
-        <hr>
+        <p class="text-xs-left text-uppercase subtitle">Overview</p>
+        <hr class="subtitle-hr">
         <p>Springhouse Partners is a New York City based real estate investment frm that was founded in 2010. The frm manages capital on behalf of fnancial institutions, family oﬃces and private investors with a focus on capital preservation and value creation
           to generate superior risk adjusted returns over diﬀerent business and economic cycles.</p>
       </div>
       <div class="col-sm-3">
-        <p class="text-xs-left text-uppercase">Address</p>
-        <hr>
+        <p class="text-xs-left text-uppercase subtitle">Address</p>
+        <hr class="subtitle-hr">
         <a href="">
           <p>Springhouse Partners
             <br>320 Fifth Avenue, Suite 800
@@ -70,8 +70,8 @@
         </a>
       </div>
       <div class="col-sm-3">
-        <p class="text-xs-left text-uppercase">Contact</p>
-        <hr>
+        <p class="text-xs-left text-uppercase subtitle">Contact</p>
+        <hr class="subtitle-hr">
         <a href="mailto:info@springhousepartners.com">
           <p>info@springhousepartners.com</p>
         </a>
@@ -102,6 +102,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script>
+    $("#selectProjects").hover(
+      function() {
+        $("#selectProjectsList").css('display', 'block');
+      },
+      function() {
+        setTimeout(
+          function() {
+            $("#selectProjectsList").css('display', 'none');
+          }, 1000);
+      }
+    );
+  </script>
 </body>
 
 </html>

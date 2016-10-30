@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="dropdown" href="selectprojects.html">Select Projects</a>
-          <div class="dropdown-menu">
+        <li class="nav-item" id="selectProjects">
+          <a class="nav-link active" href="selectprojects.html">Select Projects</a>
+          <div class="dropdown-menu" id="selectProjectsList">
             <a class="dropdown-item" href="irvingplace.html">Irving Place</a>
             <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
             <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
@@ -62,13 +62,13 @@
       <div class="col-sm-6">
         <div class="row">
           <div class="col-xs-12">
-            <img src="img/Miami_Beach.JPG">
+            <img src="img/Williamsburg_DetailA.jpg">
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <img src="img/IMG_0238.JPG">
+            <img src="img/Williamsburg_DetailB.jpg">
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui oﬃcia deserunt mollit anim id est laborum. Ullamco laboris nisi ut aliquip. </p>
           </div>
         </div>
@@ -76,7 +76,7 @@
       <div class="col-sm-3">
         <img src="img/Williamsburg.png">
         <p class="case-textblock">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-        <img class="img-circle" src="img/walking.jpg">
+        <img class="img-circle" src="img/Williamsburg_Circle.jpg">
         <p class="case-textblock">Duis aute irure dolor in reprehenderit. Einm ad minim veniam, nostrud ut exercitation ullamco laboris nisialiquip ex ea commodo consequat.</p>
       </div>
     </div>
@@ -100,6 +100,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script>
+    $("#selectProjects").hover(
+      function() {
+        $("#selectProjectsList").css('display', 'block');
+      },
+      function() {
+        setTimeout(
+          function() {
+            $("#selectProjectsList").css('display', 'none');
+          }, 1000);
+      }
+    );
+  </script>
 </body>
 
 </html>

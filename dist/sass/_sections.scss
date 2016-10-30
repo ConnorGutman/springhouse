@@ -1,6 +1,6 @@
 #home {
   .home-carousel {
-    padding: 5vh 0;
+    padding: 2.5vh 0 5vh;
     div {
       padding: 0;
       .home-carousel-open {
@@ -13,6 +13,12 @@
   }
   .home-text {
     padding: 0 5%;
+    p {
+      margin-top: 0;
+    }
+    .hidden-xs-down {
+      margin-bottom: 2rem;
+    }
   }
 }
 #about {
@@ -26,6 +32,9 @@
   .ourStory {
     @media(min-width: 768px) {
       padding: 0;
+      p {
+        padding: 0 10px;
+      }
     }
   }
 }
@@ -46,6 +55,11 @@
 }
 #caseStudy {
   padding: 5vh 5%;
+  .col-sm-6 {
+    @media(min-width: 768px) {
+      padding: 0;
+    }
+  }
   img {
     width: 100%;
     margin-bottom: 2vh;

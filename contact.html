@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="dropdown" href="selectprojects.html">Select Projects</a>
-          <div class="dropdown-menu">
+        <li class="nav-item" id="selectProjects">
+          <a class="nav-link" href="selectprojects.html">Select Projects</a>
+          <div class="dropdown-menu" id="selectProjectsList">
             <a class="dropdown-item" href="irvingplace.html">Irving Place</a>
             <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
             <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
@@ -82,7 +82,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa19u4SxY-qBj_MnsRUTYdsoTlGv6L47E"></script>
-
+  <script>
+    $("#selectProjects").hover(
+      function() {
+        $("#selectProjectsList").css('display', 'block');
+      },
+      function() {
+        setTimeout(
+          function() {
+            $("#selectProjectsList").css('display', 'none');
+          }, 1000);
+      }
+    );
+  </script>
   <script type="text/javascript">
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', init);
@@ -111,7 +123,7 @@
           "featureType": "landscape",
           "elementType": "geometry",
           "stylers": [{
-            "color": "#f5f5f5"
+            "color": "#e1e1e1"
           }, {
             "lightness": 20
           }]
@@ -153,7 +165,7 @@
           "featureType": "poi",
           "elementType": "geometry",
           "stylers": [{
-            "color": "#f5f5f5"
+            "color": "#c3c3c3"
           }, {
             "lightness": 21
           }]
@@ -161,7 +173,7 @@
           "featureType": "poi.park",
           "elementType": "geometry",
           "stylers": [{
-            "color": "#dedede"
+            "color": "#c3c3c3"
           }, {
             "lightness": 21
           }]
@@ -226,7 +238,7 @@
 
       // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.7472385, -73.9877219),
+        position: new google.maps.LatLng(40.7474904, -73.9879131),
         map: map,
         title: 'Snazzy!'
       });
