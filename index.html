@@ -114,6 +114,17 @@
           }, 1000);
       }
     );
+    $("#selectProjectsList").hover(
+      function() {
+        $("#selectProjectsList").css('display', 'block');
+      },
+      function() {
+        setTimeout(
+          function() {
+            $("#selectProjectsList").css('display', 'none');
+          }, 1000);
+      }
+    );
   </script>
 </body>
 
