@@ -22,12 +22,15 @@
   }
 }
 #about {
-  padding: 5vh 5% 0;
+  padding: 0 5% 0;
   .about-carousel-open {
     position: absolute;
     width: 95%;
     height: 100%;
     z-index: 2;
+  }
+  .fixed-padding {
+    margin-top: 5vh;
   }
   .ourStory {
     @media(min-width: 768px) {
