@@ -23,6 +23,7 @@
 }
 #about {
   padding: 0 5% 0;
+  margin-bottom: 10vh;
   .about-carousel-open {
     position: absolute;
     width: 95%;
@@ -71,8 +72,15 @@
 footer {
   padding-left: 5%;
   padding-right: 5%;
+  background-color: #efefef;
 }
 .xl-footer {
   padding-left: 0;
   padding-right: 0;
+}
+.footer-fixed {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
