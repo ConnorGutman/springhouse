@@ -1,4 +1,10 @@
 #home {
+  @media(min-width: 544px) {
+    margin-top: 152.8px;
+  }
+  @media(min-width: 768px) {
+    margin-top: 124px;
+  }
   .home-carousel {
     padding: 2.5vh 0 5vh;
     div {
@@ -24,6 +30,12 @@
 #about {
   padding: 0 5% 0;
   margin-bottom: 10vh;
+  @media(min-width: 544px) {
+    margin-top: 152.8px;
+  }
+  @media(min-width: 768px) {
+    margin-top: 124px;
+  }
   .about-carousel-open {
     position: absolute;
     width: 95%;
@@ -37,28 +49,52 @@
     @media(min-width: 768px) {
       padding: 0;
       p {
-        padding: 0 10px;
+        padding: 0 0;
       }
     }
   }
 }
 #cases {
   padding: 0 5%;
+  @media(min-width: 544px) {
+    margin-top: 152.8px;
+  }
+  @media(min-width: 768px) {
+    margin-top: 124px;
+  }
 }
 #press {
   padding: 0 5%;
+  @media(min-width: 544px) {
+    margin-top: 152.8px;
+  }
+  @media(min-width: 768px) {
+    margin-top: 124px;
+  }
   .r1 {
-    margin-top: 10vh;
+    margin-top: 25vh;
   }
 }
 #contact {
   padding: 5vh 5%;
+  @media(min-width: 544px) {
+    margin-top: 152.8px;
+  }
+  @media(min-width: 768px) {
+    margin-top: 124px;
+  }
   .col-sm-3 {
     padding-top: 5vh;
   }
 }
 #caseStudy {
   padding: 5vh 5%;
+  @media(min-width: 544px) {
+    margin-top: 152.8px;
+  }
+  @media(min-width: 768px) {
+    margin-top: 124px;
+  }
   .col-sm-6 {
     @media(min-width: 768px) {
       padding: 0;
@@ -73,6 +109,9 @@ footer {
   padding-left: 5%;
   padding-right: 5%;
   background-color: #efefef;
+  .text-xs-left {
+      margin-bottom: 61.5px;
+  }
 }
 .xl-footer {
   padding-left: 0;

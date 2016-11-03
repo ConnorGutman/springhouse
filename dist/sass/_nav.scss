@@ -1,5 +1,13 @@
 nav {
-  padding: 1rem 1rem 0.25rem !important;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #efefef;
+  opacity: 1;
+  border-radius: 0 !important;
+  padding: 61.5px 1rem 0rem !important;
+  z-index: 2;
   #topNav {
     border-bottom: 1px solid #231F20;
     margin: 0 5%;
@@ -13,7 +21,7 @@ nav {
         position: absolute;
         right: 6.25%;
         bottom: 10%;
-        margin-bottom: -2px;
+        margin-bottom: -11px;
       }
       .nav-item {
         .active {
@@ -30,11 +38,11 @@ nav {
       }
       .dropdown-menu {
         left: 15%;
-        margin-top: -4px;
+        margin-top: 0;
         border-radius: 0;
         background-color: #efefef;
         a {
-          padding-left: 5px;
+          padding-left: 10px;
           font-weight: 400;
           border-bottom: 1px solid #231F20;
           &:hover {
@@ -45,8 +53,8 @@ nav {
           }
         }
         @media(min-width: 768px) {
-          left: 50px;
-          margin-top: 3px;
+          left: 45px;
+          margin-top: 0px;
         }
       }
       .dropdown-divider {

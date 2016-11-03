@@ -37,6 +37,7 @@ hr {
 .quote {
   font-family: DalaFloda, serif !important;
   font-size: 37px;
+  line-height: 1;
 }
 .quote-sm {
   font-family: DalaFloda, serif !important;
@@ -67,7 +68,11 @@ ul {
     }
   }
 }
-
+#caseStudy {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 .case {
   p {
     font-family: DalaFloda, serif;
