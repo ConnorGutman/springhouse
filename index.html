@@ -47,9 +47,22 @@
     <div class="row home-carousel">
       <div class="col-xs-12 arrows-img">
         <a class="home-carousel-open" href="#lb1"></a>
-        <img class="home-carousel-img" src="img/HomePage_flatiron_view_181-min.jpg">
+        <div id="carousel-example-generic" class="carousel slide home-carousel-img" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner home-carousel-img" role="listbox">
+            <div class="carousel-item active" id="firstSlide">
+              <img src="img/HomePage_flatiron_view_181-min.jpg" alt="Flatiron View">
+            </div>
+            <div class="carousel-item" id="secondSlide">
+              <img src="img/HomePage_adams_office_098-min.jpg" alt="The Office">
+            </div>
+          </div>
+        </div>
         <a href="#_" class="lightbox" id="lb1">
-          <img src="img/HomePage_flatiron_view_181-min.jpg">
+          <img src="">
         </a>
       </div>
     </div>
@@ -57,7 +70,9 @@
       <div class="col-sm-6">
         <p class="text-xs-left text-uppercase subtitle">Overview</p>
         <hr class="subtitle-hr">
-        <p>Springhouse Partners was founded in 2010 as a response to the existing real estate crises, and has evolved into a fully integrated investment and development company that invests across the following strategies: value-add, special situations and development.  Our approach is comprehensive and we strive to connect core entrepreneurial spirit alongside strong institutional execution in all facets of our business.  To date we have acquired and re-developed mixed-use, multi-family and hotel assets throughout New York City and South Florida.</p>
+        <p>Springhouse Partners was founded in 2010 as a response to the existing real estate crises, and has evolved into a fully integrated investment and development company that invests across the following strategies: value-add, special situations and
+          development. Our approach is comprehensive and we strive to connect core entrepreneurial spirit alongside strong institutional execution in all facets of our business. To date we have acquired and re-developed mixed-use, multi-family and hotel
+          assets throughout New York City and South Florida.</p>
       </div>
       <div class="col-sm-3">
         <p class="text-xs-left text-uppercase subtitle">Address</p>
@@ -101,6 +116,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script>
+  $("#lb1 > img").attr("src", $("#firstSlide > img").attr("src"));
+  $('#carousel-example-generic').on('slide.bs.carousel', function(e) {
+    if(e.relatedTarget.id == 'firstSlide'){
+      //alert("slide 1");
+   		$("#lb1 > img").attr("src", $("#firstSlide > img").attr("src"));
+    } else if(e.relatedTarget.id == 'secondSlide'){
+    	//$("#lb1 > img").src("img/HomePage_flatiron_view_181-min.jpg");
+    //  alert("slide 2");
+    $("#lb1 > img").attr("src", $("#secondSlide > img").attr("src"));
+    }
+
+  })
+  </script>
   <script>
     $("#selectProjects").hover(
       function() {
