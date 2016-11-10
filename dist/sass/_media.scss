@@ -58,28 +58,30 @@
       background-color: rgba(000, 000, 000, .5);
       background-image: url('../img/leftarrow.svg');
       background-repeat: no-repeat;
-      background-position: 2% 95%;
+      background-position: left 2vh bottom 2vh;
       opacity: 1;
     }
     &:after {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       content: "";
-      width: 96%;
+      width: 100%;
       height: 90%;
       background-image: url('../img/rightarrow.svg');
       background-repeat: no-repeat;
-      background-position: top right;
+      background-position: right 4vh top 4vh;
       opacity: 1;
     }
   }
 }
 .C1 {
   background-image: url('../img/Irving-preview.jpg');
+  margin-top: 0;
 }
 .C2 {
   background-image: url('../img/Columbia-preview.jpg');
+  margin-top: 0;
 }
 .C3 {
   background-image: url('../img/Miami-preview.jpg');
@@ -161,8 +163,8 @@
   &:hover {
     &:before {
       position: absolute;
-      bottom: 5%;
-      left: 6%;
+      bottom: 5vh;
+      left: 5vh;
       content: "";
       width: 88%;
       height: 90%;
@@ -186,7 +188,7 @@
   }
 }
 .arrows-img-6 {
-  margin-top: 40px;
+  margin-top: 5vh;
   &:before {
     transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
@@ -198,8 +200,8 @@
   &:hover {
     &:before {
       position: absolute;
-      bottom: 2%;
-      left: 5%;
+      bottom: 5vh;
+      left: 5vh;
       content: "";
       width: 90%;
       height: 90%;
