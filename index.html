@@ -27,10 +27,10 @@
           <a class="nav-link" href="selectprojects.html">Select Projects</a>
           <div class="dropdown-menu" id="selectProjectsList">
             <a class="dropdown-item" href="irvingplace.html">Irving Place</a>
+            <a class="dropdown-item" href="columbiauniversity.html">Columbia University</a>
             <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
             <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
             <a class="dropdown-item" href="bedstuy.html">Bed-Stuy</a>
-            <a class="dropdown-item" href="columbiauniversity.html">Columbia University</a>
           </div>
         </li>
         <li class="nav-item">
@@ -46,8 +46,7 @@
   <div class="container-fluid" id="home">
     <div class="row home-carousel">
       <div class="col-xs-12 arrows-img">
-        <a class="home-carousel-open" href="#lb1"></a>
-        <div id="carousel-example-generic" class="carousel slide home-carousel-img" data-ride="carousel">
+        <div id="home-carousel" class="carousel slide home-carousel-img" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -61,9 +60,6 @@
             </div>
           </div>
         </div>
-        <a href="#_" class="lightbox" id="lb1">
-          <img src="">
-        </a>
       </div>
     </div>
     <div class="row home-text">
@@ -117,20 +113,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
   <script>
-  $("#lb1 > img").attr("src", $("#firstSlide > img").attr("src"));
-  $('#carousel-example-generic').on('slide.bs.carousel', function(e) {
-    if(e.relatedTarget.id == 'firstSlide'){
-      //alert("slide 1");
-   		$("#lb1 > img").attr("src", $("#firstSlide > img").attr("src"));
-    } else if(e.relatedTarget.id == 'secondSlide'){
-    	//$("#lb1 > img").src("img/HomePage_flatiron_view_181-min.jpg");
-    //  alert("slide 2");
-    $("#lb1 > img").attr("src", $("#secondSlide > img").attr("src"));
-    }
-
-  })
-  </script>
-  <script>
     $("#selectProjects").hover(
       function() {
         $("#selectProjectsList").css('display', 'block');
@@ -153,6 +135,11 @@
           }, 1000);
       }
     );
+  </script>
+  <script>
+  $('.arrows-img').click(function() {
+    $('#home-carousel').carousel('next');
+  });
   </script>
 </body>
 
