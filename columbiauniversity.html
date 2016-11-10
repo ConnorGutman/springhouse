@@ -72,7 +72,20 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <img src="img/Columbia/A-min.jpg">
+            <div id="Columbia-carousel" class="carousel slide home-carousel-img selectProjects-carousel" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner home-carousel-img" role="listbox">
+                <div class="carousel-item active" id="firstSlide">
+                  <img src="img/Columbia/A-min.jpg" alt="Columbia">
+                </div>
+                <div class="carousel-item" id="secondSlide">
+                  <img src="img/Columbia/B-min.jpg" alt="Columbia">
+                </div>
+              </div>
+            </div>
             <p>Historic brownstones with period details deliver classic New York charm to tenants</p>
           </div>
         </div>
@@ -116,6 +129,11 @@
           }, 1000);
       }
     );
+  </script>
+  <script>
+  $('#Columbia-carousel').click(function() {
+    $('#Columbia-carousel').carousel('next');
+  });
   </script>
 </body>
 
