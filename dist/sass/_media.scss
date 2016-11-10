@@ -100,10 +100,34 @@
   width: 100%;
   height: 70vh;
 }
+.bs-map {
+  &:before {
+    content: "902 Bedford Avenue";
+  }
+}
+.cu-map {
+  &:before {
+    content:"220 W 116th Street";
+  }
+}
+.ip-map {
+  &:before {
+    content: "51-55 Irving Place";
+  }
+}
+.mb-map {
+  &:before {
+    content: "Coming Soon";
+  }
+}
+.wb-map {
+  &:before {
+    content: "90 Meserole Street";
+  }
+}
 .sp-maps {
   position: relative;
   &:before {
-    content: "51-55 Irving Place";
     position: absolute;
     top: 15%;
     left: 15%;
@@ -116,7 +140,7 @@
     font-size: 0.75em;
     z-index: 2;
     @media(min-width: 1200px) {
-      font-size: 0.8em;
+      font-size: 15px;
     }
   }
   &:after {
