@@ -34,9 +34,17 @@ hr {
   margin-top: 5%;
   margin-bottom: 0;
 }
+.invisible-subtitle {
+  visibility: hidden;
+}
+.invisible-subtitle-hr {
+  margin-bottom: 0;
+  border: 0;
+  visibility: hidden;
+}
 .quote {
-  font-family: DalaFloda, serif !important;
-  font-size: 37px;
+  font-size: 30px;
+  font-weight: 400;
   line-height: 1.25;
   word-wrap: break-word;
 }
