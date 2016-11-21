@@ -49,8 +49,8 @@ hr {
   word-wrap: break-word;
 }
 .quote-sm {
-  font-family: DalaFloda, serif !important;
-  font-size: 27px;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .navbar-brand {
   font-family: DalaFloda, serif !important;
@@ -67,7 +67,6 @@ hr {
     }
   }
 }
-
 ul {
   li {
     list-style: none;
@@ -93,15 +92,37 @@ ul {
     }
   }
 }
-
 .case-textblock {
   margin-bottom: 5vh;
 }
-
 .extra-lower {
   margin-bottom: 5vh;
 }
 .pull-30 {
   margin-left: -30px;
   padding-right: -5px;
+}
+#press {
+  a {
+    p {
+      u {
+        text-decoration: none;
+        border-bottom: 1px solid #231F20;
+        transition: all 0.25s ease;
+      }
+    }
+    &:hover {
+      p {
+        color: #373a3c !important;
+        u {
+          border-bottom: 4px solid #231F20;
+        }
+      }
+    }
+    &:active {
+      p {
+        color: #373a3c;
+      }
+    }
+  }
 }

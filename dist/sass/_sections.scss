@@ -78,6 +78,11 @@
   }
   .col-sm-3 {
     padding-top: 5vh;
+    a {
+      p {
+        word-wrap: break-word;
+      }
+    }
   }
 }
 #caseStudy {
