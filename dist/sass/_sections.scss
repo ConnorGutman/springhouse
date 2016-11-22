@@ -7,7 +7,7 @@
   }
   .home-carousel {
     margin: 0 15px;
-    padding: 2.5vh 5% 5vh 5%;
+    padding: 2.5vh 5% 5vh;
     div {
       padding: 0;
     }
@@ -23,7 +23,7 @@
   }
 }
 #about {
-  padding: 0 5% 0;
+  padding: 0 5%;
   @media(min-width: 544px) {
     margin-top: 152.8px;
   }
@@ -37,7 +37,7 @@
     @media(min-width: 768px) {
       padding: 0;
       p {
-        padding: 0 0;
+        padding: 0;
       }
     }
   }
@@ -65,6 +65,9 @@
   .r1 {
     margin-top: 0;
     padding-top: 5vh;
+    @media(min-width: 768px) {
+      margin-bottom: 120px;
+    }
   }
 }
 #contact {
@@ -101,13 +104,16 @@
     width: 100%;
     margin-bottom: 2vh;
   }
+  .carousel {
+    margin-bottom: 2vh;
+  }
 }
 footer {
   padding-left: 5%;
   padding-right: 5%;
   background-color: #efefef;
   .text-xs-left {
-      margin-bottom: 61.5px;
+    margin-bottom: 61.5px;
   }
 }
 .xl-footer {

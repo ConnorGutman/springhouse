@@ -30,7 +30,7 @@
             <a class="dropdown-item" href="columbiauniversity.html">Columbia University</a>
             <a class="dropdown-item" href="miamibeach.html">Miami Beach</a>
             <a class="dropdown-item" href="williamsburg.html">Williamsburg</a>
-            <a class="dropdown-item" href="bedstuy.html">Bed-Stuy</a>
+            <a class="dropdown-item" href="Williamsburg.html">Bed-Stuy</a>
           </div>
         </li>
         <li class="nav-item">
@@ -72,7 +72,20 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <img src="img/Williamsburg/A-min.jpg" alt="Williamsburg">
+            <div id="Williamsburg-carousel" class="carousel slide home-carousel-img" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner home-carousel-img" role="listbox">
+                <div class="carousel-item active" id="firstSlide">
+                  <img src="img/Williamsburg/A-min.jpg" alt="">
+                </div>
+                <div class="carousel-item" id="secondSlide">
+                  <img src="img/Williamsburg/B-min.jpg" alt="">
+                </div>
+              </div>
+            </div>
             <p>A range of amenities – including a game room, full gym, and bike storage – are designed to support younger residents’ lifestyle and tastes.</p>
           </div>
         </div>
@@ -116,6 +129,11 @@
           }, 1000);
       }
     );
+  </script>
+  <script>
+  $('#Williamsburg-carousel').click(function() {
+    $('#Williamsburg-carousel').carousel('next');
+  });
   </script>
 </body>
 
