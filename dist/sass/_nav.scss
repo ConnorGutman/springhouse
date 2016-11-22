@@ -82,3 +82,36 @@ nav {
     }
   }
 }
+#ddown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  padding: 0 10px;
+  -webkit-box-shadow: 4px 4px 5px 1px rgba(171,171,171,0.65);
+  -moz-box-shadow: 4px 4px 5px 1px rgba(171,171,171,0.65);
+  box-shadow: 4px 4px 5px 1px rgba(171,171,171,0.65);
+  background-color: #efefef;
+  li {
+    float: none;
+    width: 100%;
+    border-bottom: 2px solid #231F20;
+    padding: 5px 0;
+    a {
+      width: 100%;
+      font-weight: 400;
+      line-height: 2.2;
+      transition: 0.25s color ease;
+      &:hover {
+        color: #8e8e8e !important;
+        background-color: #efefef;
+        border-bottom: 0 !important;
+      }
+    }
+  }
+  .last-ddown {
+    border-bottom: 0;
+  }
+}
+#ddown-open:hover > ul {
+  display: block;
+}
