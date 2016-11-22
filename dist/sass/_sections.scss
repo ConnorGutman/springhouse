@@ -24,7 +24,6 @@
 }
 #about {
   padding: 0 5% 0;
-  margin-bottom: 10vh;
   @media(min-width: 544px) {
     margin-top: 152.8px;
   }
@@ -120,4 +119,11 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.about-footer {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.r15 {
+  margin: 0 15px !important;
 }
