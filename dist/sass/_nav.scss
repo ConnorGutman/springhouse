@@ -18,6 +18,9 @@ nav {
       img {
         height: 35px;
         margin-bottom: 5px;
+        @media(min-width: 1400px) {
+          height: 48px;
+        }
       }
     }
     .nav {

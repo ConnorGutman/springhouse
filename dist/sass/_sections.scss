@@ -81,8 +81,20 @@
   .col-sm-3 {
     padding-top: 5vh;
     a {
+      &:hover {
+        p {
+          u {
+            border-bottom: 4px solid #231F20;
+          }
+        }
+      }
       p {
         word-wrap: break-word;
+        u {
+          text-decoration: none;
+          border-bottom: 1px solid #231F20;
+          transition: all 0.25s ease;
+        }
       }
     }
   }
