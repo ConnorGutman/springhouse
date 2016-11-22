@@ -18,7 +18,7 @@ a {
   color: #231F20;
   &:hover {
     text-decoration: none;
-    color: #5b5254;
+    color: #231F20 !important;
   }
 }
 hr {
@@ -128,8 +128,9 @@ ul {
       }
     }
     &:hover {
+      color: #231F20 !important;
       p {
-        color: #373a3c !important;
+        color: #231F20 !important;
         u {
           border-bottom: 4px solid #231F20;
         }

@@ -30,6 +30,9 @@ nav {
         bottom: 10%;
         margin-bottom: -8px;
       }
+      @media(min-width: 1500px) {
+        margin-bottom: -9px;
+      }
       .nav-item {
         .active {
           border-bottom: 4px solid #231F20;
