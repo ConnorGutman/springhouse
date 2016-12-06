@@ -44,7 +44,7 @@
 
   <div class="container-fluid" id="about">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 about-text-hold">
         <div class="row">
           <p class="subtitle">Our Story</p>
           <hr class="subtitle-hr">
@@ -58,20 +58,19 @@
               <br>We create value by recognizing opportunities early, formulating the appropriate business plan and then applying the right operational savvy to execute our vision.</p>
           </div>
           <div class="col-sm-6 remove-right">
-            <p>Our flexibility and nimbleness at all stages of the investment and development process is an advantage in any economic cycle.  We are a hands on manager with capabilities in investment, finance, construction, property management and design.</p>
+            <p>Our flexibility and nimbleness at all stages of the investment and development process is an advantage in any economic cycle. We are a hands on manager with capabilities in investment, finance, construction, property management and design.</p>
             <hr class="about-hr">
             <p class="quote text-xs-center">Entrepreneurial Spirit
               <br>+
               <br>Institutional Execution</p>
             <hr class="about-hr">
-            <p>We target relationship driven situations with strong long term growth potential.  Our goal is to create significant value for each project and neighborhood we work in.</p>
+            <p>We target relationship driven situations with strong long term growth potential. Our goal is to create significant value for each project and neighborhood we work in.</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 about-img-hold">
         <p class="subtitle invisible-subtitle">Our Story</p>
         <hr class="subtitle-hr invisible-subtitle-hr">
-        <img class="media-fw" src="img/About.jpg">
       </div>
     </div>
     <div class="row r15">
@@ -82,12 +81,17 @@
           <img class="media-fw portrait" src="img/portrait.png">
         </div>
         <div class="col-sm-9">
-          <p class="text-3">Adam Verner is the Founder and CEO of Springhouse Partners. In this capacity, he leads corporate strategy and execution for the firm’s principal investment transactions.<br><br>Since its inception in 2010, Adam has successfully closed in excess of
-            $400 million of real estate assets across the mixed-use, multifamily and hotel sectors. Prior to forming Springhouse, Adam was the Director of Acquisitions at Urban American, an owner and operator of 12,000 apartments in the New York Metro
-            area. In this role, he led the $75 million acquisition of the Westchester Plaza, a 1,000 unit mixed-use development. Adam was also responsible for the management and oversight of the Grand Review portfolio, a 20 building collection of mixed-use
-            assets spread throughout New York City.<br><br>Prior to joining Urban American, Adam was responsible for originating $500 million of commercial real estate equity and debt investments at Marathon Asset Management, a $10 billion hedge fund which specialized
-            in opportunistic investments across all property types.<br><br>Notable projects included the $3 billion Cosmopolitan Resort &amp; Casino development in Las Vegas, the high-end condominium conversion of 147 Waverly Place in Manhattan and the initial
-            zoning &amp; land use phase for the Domino Sugar Factory redevelopment in Williamsburg, Brooklyn. Adam graduated with a business degree from American University in Washington, DC.</p>
+          <p class="text-3">Adam Verner is the Founder and CEO of Springhouse Partners. In this capacity, he leads corporate strategy and execution for the firm’s principal investment transactions.
+            <br>
+            <br>Since its inception in 2010, Adam has successfully closed in excess of $400 million of real estate assets across the mixed-use, multifamily and hotel sectors. Prior to forming Springhouse, Adam was the Director of Acquisitions at Urban American,
+            an owner and operator of 12,000 apartments in the New York Metro area. In this role, he led the $75 million acquisition of the Westchester Plaza, a 1,000 unit mixed-use development. Adam was also responsible for the management and oversight
+            of the Grand Review portfolio, a 20 building collection of mixed-use assets spread throughout New York City.
+            <br>
+            <br>Prior to joining Urban American, Adam was responsible for originating $500 million of commercial real estate equity and debt investments at Marathon Asset Management, a $10 billion hedge fund which specialized in opportunistic investments
+            across all property types.
+            <br>
+            <br>Notable projects included the $3 billion Cosmopolitan Resort &amp; Casino development in Las Vegas, the high-end condominium conversion of 147 Waverly Place in Manhattan and the initial zoning &amp; land use phase for the Domino Sugar Factory
+            redevelopment in Williamsburg, Brooklyn. Adam graduated with a business degree from American University in Washington, DC.</p>
         </div>
       </div>
     </div>
@@ -122,6 +126,13 @@
             }, 1000);
         }
       );
+    </script>
+    <script>
+      $(window).on("resize", function() {
+        $(".about-img-hold").css({
+          'height': ($(".about-text-hold").height() + 'px')
+        });
+      }).resize();
     </script>
 </body>
 

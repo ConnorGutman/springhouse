@@ -142,7 +142,7 @@
   position: relative;
   &:before {
     position: absolute;
-    top: 15%;
+    top: 0;
     left: 20%;
     width: 60%;
     height: 40%;
@@ -152,6 +152,7 @@
     color: #231F20;
     font-size: 0.75em;
     z-index: 2;
+    transform: translateY(50%);
     @media(min-width: 1200px) {
       font-size: 15px;
     }
@@ -159,7 +160,7 @@
   &:after {
     content: "";
     position: absolute;
-    top: 15%;
+    top: 0;
     left: 15%;
     width: 70%;
     height: 40%;
@@ -173,7 +174,8 @@
     background: url('../img/arrow.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
+        transform: translateY(50%);
     @media(min-width: 544px) {
       font-size: 0.75em;
     }
@@ -263,4 +265,14 @@
 
 .selectProjects-carousel {
   margin-bottom: 2vh;
+}
+
+.about-img-hold {
+  background: url("../img/About.jpg");
+  background-repeat: no-repeat;
+  background-size: calc(100% - 30px) 100%;
+  background-position: 15px 5vh;
+  @media(max-width: 544px) {
+    height: 50vh !important;
+  }
 }
