@@ -122,3 +122,6 @@ nav {
 #ddown-open:hover > ul {
   display: block;
 }
+button:focus {
+  outline: 0;
+}
