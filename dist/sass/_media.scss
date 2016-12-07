@@ -268,9 +268,12 @@
 }
 
 .about-img-hold {
+  width: calc(50% - 30px);
+  padding: 0;
+  margin-left: 15px;
   background: url("../img/About.jpg");
   background-repeat: no-repeat;
-  background-size: calc(100% - 30px) 100%;
+  background-size: cover;
   background-position: 15px 5vh;
   @media(max-width: 544px) {
     height: 50vh !important;
