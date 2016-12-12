@@ -83,11 +83,9 @@
 }
 .C1 {
   background-image: url('../img/Irving-preview.jpg');
-  margin-top: 0;
 }
 .C2 {
   background-image: url('../img/Columbia-preview.jpg');
-  margin-top: 0;
 }
 .C3 {
   background-image: url('../img/Miami-preview.jpg');
@@ -109,7 +107,8 @@
   background-repeat: no-repeat;
   @media(min-width: 544px) {
     background: url("../img/map.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
   }
 }
