@@ -33,9 +33,12 @@
   .fixed-padding {
     margin-top: 5vh;
   }
+  .colfixleft {
+    padding-left: 0;
+  }
   .ourStory {
     @media(min-width: 768px) {
-      padding: 0;
+      padding: 0 15px 0 0;
       p {
         padding: 0;
       }
@@ -105,6 +108,14 @@
         p {
           u {
             //  border-bottom: 4px solid #231F20;
+            color: #8e8e8e;
+          }
+        }
+      }
+      &:focus {
+        color: #8e8e8e !important;
+        p {
+          u {
             color: #8e8e8e;
           }
         }

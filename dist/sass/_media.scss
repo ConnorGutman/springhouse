@@ -8,7 +8,6 @@
   margin-bottom: 2vh;
   @media(min-width: 1400px) {
     width: 75% !important;
-    margin-left: 12.5% !important;
   }
 }
 .home-carousel-img {
@@ -273,7 +272,7 @@
   background: url("../img/About.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   //background-position: 15px 5vh;
   @media(max-width: 544px) {
     height: 50vh !important;
