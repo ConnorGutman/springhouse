@@ -30,6 +30,9 @@
   @media(min-width: 768px) {
     margin-top: 124px;
   }
+  .pr30 {
+    padding-right: 30px;
+  }
   .fixed-padding {
     margin-top: 5vh;
   }
@@ -59,6 +62,11 @@
 }
 #press {
   padding: 0 5%;
+  a {
+    p {
+      margin-bottom: 0;
+    }
+  }
   @media(min-width: 544px) {
     margin-top: 152.8px;
   }
@@ -84,7 +92,12 @@
     margin-top: 0;
     padding-top: 5vh;
     @media(min-width: 768px) {
-      margin-bottom: 120px;
+      margin-bottom: 100px;
+    }
+  }
+  .r2 {
+    @media(min-width: 768px) {
+      margin-bottom: 100px;
     }
   }
 }
