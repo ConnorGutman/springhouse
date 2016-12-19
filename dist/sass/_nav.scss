@@ -6,8 +6,10 @@ nav {
   background-color: #efefef;
   opacity: 1;
   border-radius: 0 !important;
-  padding: 55px 1rem 0 !important;
   z-index: 5;
+  @media(min-width: 768px) {
+    padding: 55px 1rem 0 !important;
+  }
   #topNav {
     border-bottom: 2px solid #231F20;
     margin: 0 5%;
