@@ -32,6 +32,9 @@
   }
   .pr30 {
     padding-right: 30px;
+    @media(min-width: 1400px) {
+      padding-right: 45px;
+    }
   }
   .fixed-padding {
     margin-top: 5vh;
