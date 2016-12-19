@@ -31,7 +31,9 @@
     margin-top: 124px;
   }
   .pr30 {
+    @media(min-width: 992px) {
     padding-right: 30px;
+    }
     @media(min-width: 1400px) {
       padding-right: 45px;
     }
@@ -40,7 +42,9 @@
     margin-top: 5vh;
   }
   .colfixleft {
+    @media(min-width: 768px) {
     padding-left: 0;
+    }
   }
   .ourStory {
     @media(min-width: 768px) {
@@ -67,7 +71,9 @@
   padding: 0 5%;
   a {
     p {
+      @media(min-width: 992px) {
       margin-bottom: 0;
+      }
     }
   }
   @media(min-width: 544px) {
