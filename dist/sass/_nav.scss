@@ -26,6 +26,9 @@ nav {
       }
     }
     .nav {
+      @media(max-height: 768px) {
+        height: 100vh;
+      }
       @media(min-width: 768px) {
         position: absolute;
         right: 7.1%;
@@ -40,8 +43,10 @@ nav {
       }
       .nav-item {
         .active {
+          @media(min-width: 768px) {
           border-bottom: 4px solid #231F20;
           padding-bottom: 3px !important;
+          }
         }
         a {
           &:hover {
