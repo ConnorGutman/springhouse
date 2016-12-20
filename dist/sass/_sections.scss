@@ -41,6 +41,12 @@
   .fixed-padding {
     margin-top: 5vh;
   }
+  .xsrp {
+    @media(max-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   .colfixleft {
     @media(min-width: 768px) {
       padding-left: 0;
