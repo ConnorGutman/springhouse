@@ -65,6 +65,13 @@
 }
 #cases {
   padding: 5vh 5%;
+  @media(max-width: 768px) {
+  .row {
+    &:after {
+    display: block !important;
+    }
+  }
+  }
   @media(min-width: 544px) {
     margin-top: 152.8px;
   }
