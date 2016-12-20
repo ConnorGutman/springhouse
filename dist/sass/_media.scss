@@ -37,7 +37,6 @@
   background-position: center center;
   p {
     position: absolute;
-    margin: 2vh auto;
     line-height: 30vh;
     top: 0;
     bottom: 0;
@@ -45,6 +44,9 @@
     right: 0;
     z-index: 1;
     text-align: center;
+    @media(min-width: 768px) {
+      margin: 2vh auto;
+    }
   }
   &:before {
     content: "";
