@@ -224,3 +224,9 @@ footer {
 .r15 {
   margin: 0 15px !important;
 }
+.xsrp {
+  @media(max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
