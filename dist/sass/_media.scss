@@ -181,20 +181,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     transform: translateY(50%);
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-      background: url('../img/arrow.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
-      @media {
-        background: url('../img/arrow.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-    }
     @media(min-width: 544px) {
       font-size: 0.75em;
     }
