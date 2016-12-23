@@ -74,11 +74,11 @@
       opacity: 1;
     }
     &:after {
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
+      //  position: absolute;
+      //  top: 0;
+      //  left: 0;
       //content: "";
-    //  width: 100%;
+      //  width: 100%;
       //height: 90%;
       background-image: url('../img/rightarrow.svg');
       background-repeat: no-repeat;
@@ -125,7 +125,7 @@
 }
 .cu-map {
   &:before {
-    content:"220 W 116th Street";
+    content: "220 W 116th Street";
   }
 }
 .ip-map {
@@ -176,11 +176,17 @@
     font-size: 0.75em;
     line-height: 8vh;
     vertical-align: middle;
-    background: url('../img/arrow.svg');
+    background: url('../img/arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-        transform: translateY(50%);
+    transform: translateY(50%);
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      background: url('../img/arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
     @media(min-width: 544px) {
       font-size: 0.75em;
     }
@@ -267,11 +273,9 @@
     }
   }
 }
-
 .selectProjects-carousel {
   margin-bottom: 2vh;
 }
-
 .about-img-hold {
   width: calc(50% - 30px);
   padding: 0;
