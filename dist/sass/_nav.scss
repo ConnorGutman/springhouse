@@ -14,12 +14,18 @@ nav {
     border-bottom: 2px solid #231F20;
     margin: 0 5%;
     .navbar-brand {
-      @media(max-width: 768px) {
-        width: 100%;
+      @media(max-width: 544px) {
+        position: fixed;
+        top: 0;
+        margin: 0.5rem 2rem;
       }
+
       img {
-        height: 40px;
+        height: 36px;
         margin-bottom: 5px;
+        @media(min-width: 544px) {
+          height: 40px;
+        }
         @media(min-width: 1500px) {
           height: 55px;
         }
@@ -41,18 +47,24 @@ nav {
       @media(min-width: 1500px) {
         margin-bottom: -10px;
       }
+      .hidden-sm-up {
+        padding-left: 10%;
+      }
       .nav-item {
         .active {
           @media(min-width: 768px) {
-          border-bottom: 4px solid #231F20;
-          padding-bottom: 3px !important;
+            border-bottom: 4px solid #231F20;
+            padding-bottom: 3px !important;
           }
         }
         a {
           &:hover {
+            color: #8e8e8e !important;
+            @media(min-width: 544px) {
             border-bottom: 4px solid #231F20;
             padding-bottom: 3px !important;
             margin-bottom: -4px;
+          }
           }
           //transition: border 0.25s ease;
         }

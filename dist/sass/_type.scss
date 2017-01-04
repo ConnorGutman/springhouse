@@ -143,6 +143,9 @@ ul {
           border-bottom: 2px solid #231F20;
         }
       }
+      @media(max-width: 544px) {
+        margin-bottom: 50px;
+      }
     }
     &:hover {
       color: #231F20 !important;
