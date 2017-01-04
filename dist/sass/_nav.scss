@@ -7,8 +7,21 @@ nav {
   opacity: 1;
   border-radius: 0 !important;
   z-index: 5;
+  padding: 0.5rem 1.25rem !important;
   @media(min-width: 768px) {
     padding: 55px 1rem 0 !important;
+  }
+  .navbar-brand-mobile {
+    @media(max-width: 544px) {
+      position: fixed;
+      top: 0;
+      margin: 0.5rem 0;
+    }
+
+    img {
+      height: 36px;
+      margin-bottom: 5px;
+    }
   }
   #topNav {
     border-bottom: 2px solid #231F20;

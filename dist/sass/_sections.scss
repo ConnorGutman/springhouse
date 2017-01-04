@@ -1,5 +1,5 @@
 #home {
-  @media(max-height: 800px) {
+  @media(max-height: 800px) and (min-width: 544px) {
     margin-top: 80px !important;
     padding-top: 5vh;
   }
