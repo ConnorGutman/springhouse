@@ -72,7 +72,9 @@ nav {
         }
         a {
           &:hover {
+            @media(max-width: 544px) {
             color: #8e8e8e !important;
+            }
             @media(min-width: 544px) {
             border-bottom: 4px solid #231F20;
             padding-bottom: 3px !important;
