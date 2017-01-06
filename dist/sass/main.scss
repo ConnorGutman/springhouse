@@ -1,23 +1,25 @@
 @font-face {
   font-family: 'Brown';
-  src:  url('Fonts/Brown-Regular.otf') format('opentype');
+  src: url('Fonts/Brown-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'DalaFloda';
-  src:  url('Fonts/DalaFloda-RomanNo2.otf') format('opentype');
+  src: url('Fonts/DalaFloda-RomanNo2.otf') format('opentype');
 }
 @import '_type';
 @import '_nav';
 @import '_grid';
 @import '_media';
 @import '_sections';
-
 body {
   background-color: #efefef;
 }
-
 @media (orientation: landscape) {
   body {
+    @include transform-origin(0% 0%);
+    @include transform( rotate(90deg));
+    position: absolute;
+    left: 100%;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -25,7 +27,6 @@ body {
     transform: rotate(-90deg);
   }
 }
-
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
