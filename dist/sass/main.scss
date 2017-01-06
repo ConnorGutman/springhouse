@@ -1,19 +1,22 @@
 @font-face {
   font-family: 'Brown';
-  src: url('Fonts/Brown-Regular.otf') format('opentype');
+  src:  url('Fonts/Brown-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'DalaFloda';
-  src: url('Fonts/DalaFloda-RomanNo2.otf') format('opentype');
+  src:  url('Fonts/DalaFloda-RomanNo2.otf') format('opentype');
 }
 @import '_type';
 @import '_nav';
 @import '_grid';
 @import '_media';
 @import '_sections';
+
 body {
   background-color: #efefef;
 }
+
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
