@@ -17,14 +17,16 @@ nav {
       top: 0;
       margin: 0.5rem 5%;
     }
-
     img {
       height: 36px;
-      margin-bottom: 5px;
+      @media(min-width: 544px) {
+        margin-bottom: 5px;
+      }
     }
   }
   button {
-    position: fixed; right: 6%;
+    position: fixed;
+    right: 6%;
   }
   #topNav {
     border-bottom: 2px solid #231F20;
@@ -35,7 +37,6 @@ nav {
         top: 0;
         margin: 0.5rem 2rem;
       }
-
       img {
         height: 36px;
         margin-bottom: 5px;
@@ -76,13 +77,13 @@ nav {
         a {
           &:hover {
             @media(max-width: 544px) {
-            color: #8e8e8e !important;
+              color: #8e8e8e !important;
             }
             @media(min-width: 544px) {
-            border-bottom: 4px solid #231F20;
-            padding-bottom: 3px !important;
-            margin-bottom: -4px;
-          }
+              border-bottom: 4px solid #231F20;
+              padding-bottom: 3px !important;
+              margin-bottom: -4px;
+            }
           }
           //transition: border 0.25s ease;
         }
