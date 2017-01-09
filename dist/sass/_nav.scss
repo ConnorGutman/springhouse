@@ -48,6 +48,9 @@ nav {
         height: 36px;
         margin-bottom: 5px;
         @media(min-width: 544px) {
+          height: 30px;
+        }
+        @media(min-width: 615px) {
           height: 40px;
         }
         @media(min-width: 1500px) {
@@ -76,7 +79,7 @@ nav {
       }
       .nav-item {
         .active {
-          @media(min-width: 768px) {
+          @media(min-width: 544px) {
             border-bottom: 4px solid #231F20;
             padding-bottom: 3px !important;
           }
