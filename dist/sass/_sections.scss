@@ -174,7 +174,9 @@
         }
       }
       p {
+        @media(max-width: 544px) {
         word-wrap: break-word;
+        }
         u {
           text-decoration: none;
           //border-bottom: 1px solid #231F20;
