@@ -8,7 +8,7 @@ nav {
   border-radius: 0 !important;
   z-index: 5;
   padding: 0.6rem 1.25rem !important;
-  @media(min-width: 768px) {
+  @media(min-width: 544px) {
     padding: 55px 1rem 0 !important;
   }
   .navbar-toggler {
@@ -59,7 +59,7 @@ nav {
       @media(max-width: 544px) {
         height: 100vh;
       }
-      @media(min-width: 768px) {
+      @media(min-width: 544px) {
         position: absolute;
         right: 7.1%;
         bottom: 10%;
