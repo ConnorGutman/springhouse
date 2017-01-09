@@ -94,6 +94,9 @@
 }
 #press {
   padding: 0 5%;
+  @media(max-width: 544px) {
+      margin-top: 5vh;
+  }
   a {
     p {
       @media(min-width: 992px) {
