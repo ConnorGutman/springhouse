@@ -101,6 +101,11 @@
       }
     }
   }
+  .press-fix {
+    @media(min-width: 768px) and (max-width: 992px) {
+    margin-bottom: 85px;
+    }
+  }
   @media(min-width: 544px) {
     margin-top: 152.8px;
   }
