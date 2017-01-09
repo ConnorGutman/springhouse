@@ -199,9 +199,17 @@
     );
   </script>
   <script>
-  $(document).ready(function() {
-    //$(".r1-qb").css("height", $(".r1-qa").height());
-  });
+    $(".navbar-toggler").click(function() {
+      $("body").css('overflow', 'hidden');
+      if ($('#topNav').attr('aria-expanded') === "false") {
+        $("body").css('overflow', 'hidden');
+      }
+
+      if ($('#topNav').attr('aria-expanded') === "true") {
+        $("body").css('overflow', 'initial');
+      }
+
+    });
   </script>
 </body>
 

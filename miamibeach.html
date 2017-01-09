@@ -140,6 +140,19 @@
       }
     );
   </script>
+  <script>
+    $(".navbar-toggler").click(function() {
+      $("body").css('overflow', 'hidden');
+      if ($('#topNav').attr('aria-expanded') === "false") {
+        $("body").css('overflow', 'hidden');
+      }
+
+      if ($('#topNav').attr('aria-expanded') === "true") {
+        $("body").css('overflow', 'initial');
+      }
+
+    });
+  </script>
 </body>
 
 </html>
